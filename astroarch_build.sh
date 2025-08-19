@@ -24,7 +24,7 @@ useradd -G wheel -m astronaut
 echo "astronaut:astro" | chpasswd
 
 # Pull the brain repo, this will be used for scripting out the final image
-su astronaut -c "git clone https://github.com/devDucks/astroarch.git /home/astronaut/.astroarch"
+su astronaut -c "git clone -b stable https://github.com/DavideRuzza/astroarch.git /home/astronaut/.astroarch"
 
 # Uncomment en_US UTF8 and generate locale files
 sed -i -e 's/#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen
