@@ -66,7 +66,7 @@ be `alarm`
 
 You'll be dropped into `alarm` shell and now we can proceed:
 - become sudo with `su -` the password is `root`
-- type `curl https://raw.githubusercontent.com/devDucks/astroarch/main/astroarch_build.sh > astroarch_build.sh`
+- type `curl https://raw.githubusercontent.com/DavideRuzza/astroarch/stable/astroarch_build.sh > astroarch_build.sh`
 - type `bash astroarch_build.sh`
 
 This is the only thing required, the rest of the procedure is fully automated!
